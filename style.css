@@ -12,12 +12,47 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
+    background: #1F2937;
 }
 
 .header {
     display: flex;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 .hero-content {
     display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.ul, .hero-content {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.hero-button {
+    margin: 18px;
+}
+
+.hero-image {
+    margin-right: 150px;
+    width: 200px;
 }
