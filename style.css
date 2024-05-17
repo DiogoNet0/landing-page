@@ -1,1 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: Roboto, "Times New Roman",sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+}
+
+.hero-content {
+    display: flex;
+}
