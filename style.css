@@ -1,58 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 * {
-    font-family: Roboto, "Times New Roman",sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+  font-family: Roboto, "Times New Roman", sans-serif;
+}
+
+html {
+  display: flex;
+  /* border: 2px solid red; */
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  /* border: 2px red solid; */
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    background: #1F2937;
+  display: flex;
+  flex-direction: column;
+  background: #1f2937;
 }
 
-.header {
-    display: flex;
-    font-size: 24px;
-    color: #F9FAF8;
+.hero .header {
+  display: flex;
+  font-size: 24px;
+  color: #f9faf8;
+  padding: 16px;
+  justify-content: space-between;
 }
 
+.header a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.hero .header,
+.hero .hero-content {
+  border: 2px blue solid;
+  margin: auto 10rem;
+}
+
+.hero .hero-content {
+  border: 2px red solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero .content-left {
+  border: 2px red solid;
+  flex-basis: 25%;
+  display: flex;
+  flex-flow: column wrap;
+  margin-right: 4rem;
+}
+
+.ul,
 .hero-content {
-    display: flex;
-}
-
-a {
-    text-decoration: none;
-    color: #E5E7EB;
-}
-
-.ul, .hero-content {
-    font-size: 18px;
-    color: #E5E7EB;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.hero-title {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
+.hero-content .hero-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
 }
 
-.hero-button {
-    margin: 18px;
+.hero-button,
+.hero-button a:visited {
+  margin: 18px;
+  background-color: #3882f6;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  color: #e5e7eb;
 }
 
-.hero-image {
-    margin-right: 150px;
-    width: 200px;
+.hero-content a {
+  text-decoration: none;
+  padding: 16px;
+}
+
+.hero-content a:hover {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  display: block;
 }
