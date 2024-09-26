@@ -7,20 +7,15 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0 solid transparent;
   font-family: Roboto, "Times New Roman", sans-serif;
 }
 
 html {
-  display: flex;
-  /* border: 2px solid red; */
-  flex-direction: column;
   margin: 0;
   padding: 0;
-  min-width: 100vw;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body {
@@ -33,7 +28,7 @@ body {
   background: #1f2937;
 }
 
-.hero .header {
+.hero--header {
   display: flex;
   font-size: 24px;
   color: #f9faf8;
