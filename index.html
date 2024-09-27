@@ -7,15 +7,15 @@
   </head>
   <body>
     <div class="hero">
-      <div class="hero--header">
-        Header Logo
+      <div class="hero__header wrapper">
+        <div class="hero__header--title"><strong>Header Logo</strong></div>
         <ul>
           <li>
             <a
               href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
-              >Header link 1</a
+              >Header link one</a
             >
           </li>
           <li>
@@ -23,7 +23,7 @@
               href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
-              >Header link 2</a
+              >Header link two</a
             >
           </li>
           <li>
@@ -31,19 +31,19 @@
               href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
-              >Header link 3</a
+              >Header link three</a
             >
           </li>
         </ul>
       </div>
-      <div class="hero-content">
-        <div class="content-left">
-          <div class="hero-title">This website is awesome</div>
-          <div class="hero-text">
+      <div class="hero__content wrapper">
+        <div class="hero__content--left">
+          <div class="hero__content--title">This website is awesome</div>
+          <div class="hero__content--text">
             This website has some subtext that goes here under the main title.
             It's a smaller font and the color is lower contrast.
           </div>
-          <div class="hero-button">
+          <div class="hero__content--button">
             <a
               href="https://google.com"
               target="_blank"
@@ -52,12 +52,18 @@
             >
           </div>
         </div>
-        <div class="content-right">
-          <div class="hero-image">
-            <img src="https://placehold.co/600x250" alt="Placeholder" />
-          </div>
+        <div class="hero__content--right">
+          <img
+            class="hero_content--image"
+            src="image/green--marble.jpg"
+            alt="Green Marble"
+          />
         </div>
       </div>
     </div>
+    <div class="section-2 wrapper">Random Info</div>
+    <div class="section-3 wrapper">Quote</div>
+    <div class="section-4 wrapper">CallButton</div>
+    <footer>Crafted by Diogo Neto</footer>
   </body>
 </html>

@@ -10,95 +10,76 @@
   font-family: Roboto, "Times New Roman", sans-serif;
 }
 
-html {
+html,
+body {
   margin: 0;
   padding: 0;
+}
+
+html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-body {
-  /* border: 2px red solid; */
+.hero__header--title,
+.hero__header a {
+  color: #a8bfaa;
+}
+
+.wrapper {
+  align-self: center;
+  width: 50vw;
 }
 
 .hero {
   display: flex;
+  background-color: #115923;
   flex-direction: column;
-  background: #1f2937;
+  padding-bottom: 2rem;
 }
 
-.hero--header {
+.hero__header {
   display: flex;
-  font-size: 24px;
-  color: #f9faf8;
-  padding: 16px;
+  flex-flow: row nowrap;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding-top: 1rem;
+}
+
+.hero__header--title {
+  height: 2rem;
+}
+
+.hero__header ul {
+  /* border: 1px blue solid; */
+  display: flex;
+  justify-content: space-evenly;
+  width: 20vw;
+  font-size: 1rem;
+  list-style-type: none;
+}
+
+.hero__header a {
+  text-decoration: none;
+}
+
+.hero__content {
+  padding-top: 3rem;
+  display: flex;
   justify-content: space-between;
 }
 
-.header a {
-  text-decoration: none;
-  color: #e5e7eb;
-}
-
-.hero .header,
-.hero .hero-content {
-  border: 2px blue solid;
-  margin: auto 10rem;
-}
-
-.hero .hero-content {
-  border: 2px red solid;
+.hero__content--right {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  max-width: 37.5rem;
+  max-height: 15.6rem;
 }
-
-.hero .content-left {
-  border: 2px red solid;
-  flex-basis: 25%;
-  display: flex;
-  flex-flow: column wrap;
-  margin-right: 4rem;
-}
-
-.ul,
-.hero-content {
-  font-size: 18px;
-  color: #e5e7eb;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hero-content .hero-title {
-  font-size: 48px;
-  font-weight: 900;
-  color: #f9faf8;
-}
-
-.hero-button,
-.hero-button a:visited {
-  margin: 18px;
-  background-color: #3882f6;
-  width: 100px;
-  border-radius: 5px;
-  text-align: center;
-  color: #e5e7eb;
-}
-
-.hero-content a {
-  text-decoration: none;
-  padding: 16px;
-}
-
-.hero-content a:hover {
-  background-color: #1f2937;
-  color: #e5e7eb;
-  display: block;
+.hero__content--right img {
+  width: 100%;
+  height: 100%;
 }
