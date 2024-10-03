@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
+    <section class="hero">
       <div class="hero__header wrapper">
         <div class="hero__header--title"><strong>Header Logo</strong></div>
         <ul>
@@ -60,24 +60,45 @@
           />
         </div>
       </div>
-    </div>
-    <div class="section--2">
+    </section>
+    <section class="section--2">
       <div class="wrapper"><h2>Some random information.</h2></div>
       <div class="section--2__squares wrapper">
-        <div class="square">
-          <div class="square--text">
+        <div class="square__wrapper">
+          <div class="square"></div>
+          <p class="square--text">
             this is some subtext under a beautiful green square
-          </div>
+          </p>
         </div>
-        <div class="square">
-          this is another beautiful green square with some text under it
+        <div class="square__wrapper">
+          <div class="square"></div>
+          <p class="square--text">
+            this is another beautiful green square with some text under it
+          </p>
         </div>
-        <div class="square">this is ... another ... green square???</div>
-        <div class="square">at this point ... i think you got it ...</div>
+        <div class="square__wrapper">
+          <div class="square"></div>
+          <p class="square--text">is ... another ... green square???</p>
+        </div>
+        <div class="square__wrapper">
+          <div class="square"></div>
+          <p class="square--text">at this point ... i think you got it ...</p>
+        </div>
       </div>
-    </div>
-    <div class="section--3 wrapper">Quote</div>
-    <div class="section--4 wrapper">CallButton</div>
+    </section>
+    <section class="section--3">
+      <div class="quote__container wrapper">
+        <blockquote>
+          <p>
+            "This is an inspiring quote, or a testimonial from a customer. Maybe
+            it's just filling up space, or maybe people will actually read it.
+            Who knows? All I know is that it looks nice."
+            <cite>- Thor, God of Thunder </cite>
+          </p>
+        </blockquote>
+      </div>
+    </section>
+    <section class="section--4 wrapper">CallButton</section>
     <footer>Crafted by Diogo Neto</footer>
   </body>
 </html>
